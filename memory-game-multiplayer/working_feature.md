@@ -1,0 +1,1 @@
+For the multiplayer game the differences are: current player, and player scores. This is implemented in when the player who is picking squares gets a correct match the player gets a point. Then the other person chooses squares to earn points. And it goes back and forth until all squares are picked and a winner is crowned. 

@@ -69,7 +69,7 @@
 
 /* 🍉 Fruit Border Container */
 .fruit-border {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -92,7 +92,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(90vw, 600px); /* Responsive width */
+    width: min(50vw, 500px); /* Responsive width */
+    max-width: 60%;
     background: #fff;
     border: 5px solid #333;
     border-radius: 10px;
@@ -104,7 +105,7 @@
 /* 🃏 Game Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* This feels important, but I couldn't get it to do anything meaningful*/
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -185,10 +186,12 @@ body {
 }
 
 .game-container {
-  width: 80%;
-  max-width: 600px;
+  align-content: absolute;
+  width: 50%;
+  max-width: min(60vw, 700px);
+  max-height: min(500px);
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   background: #fff;
   border: 2px solid #333;
   border-radius: 10px;
